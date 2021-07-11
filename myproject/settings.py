@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure--jga=*ey*r0i#jko!^!g(3_fa)pi&itqwk52i0d=)-(t2y2_u^'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -81,7 +81,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'myproject',
         'USER': 'postgres',
-        'PASSWORD': '240179suliko12',
+        'PASSWORD': '',
         'HOST': 'localhost'
     }
 }
