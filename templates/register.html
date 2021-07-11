@@ -1,0 +1,21 @@
+<h3>Заполните поля для регистрации</h3>
+
+{%for message in messages%}
+<h5>{{message}}</h5>
+{% endfor %}
+
+<form method="post" action="register">
+    {% csrf_token %}
+   <p>Логин</p>
+   <input type="text" name="username"/>
+
+   <p>Ваш емейл</p>
+    <input type="email" name="email"/>
+
+   <p>Пароль</p>
+    <input type="password" name="password"/>
+
+   <p>Повторите пароль</p>
+    <input type="password" name="password2"/><br>
+   <input type="submit">
+</form>

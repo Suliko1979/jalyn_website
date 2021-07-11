@@ -1,0 +1,17 @@
+<h4>Войти в аккаунт</h4>
+
+{% for message in messages %}
+
+<h3>{{message}}</h3>
+
+{% endfor %}
+
+<form action="login" method="POST">
+    {% csrf_token %}
+    <p>Имя пользователя</p>
+   <input type="text" name="username"/>
+    <p>Пароль</p>
+    <input type="password" name="password"/><br>
+   <input type="submit"/>
+
+</form>
